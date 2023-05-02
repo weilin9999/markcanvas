@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+
+    <com.weilin.markcanvas.markutils.MarkDraw
+        android:id="@+id/markDraw"
+        android:layout_height="400dp"
+        android:layout_width="match_parent"
+        tools:ignore="MissingConstraints"
+        >
+
+    </com.weilin.markcanvas.markutils.MarkDraw>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:padding="20sp"
+        >
+        <Button
+            android:id="@+id/setting_1"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="恢复默认"
+            />
+        <Button
+            android:id="@+id/setting_2"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="仅显示标题"
+            />
+        <Button
+            android:id="@+id/setting_3"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="仅显示内容"
+            />
+        <Button
+            android:id="@+id/setting_4"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="显示详细Days"
+            />
+
+        <Button
+            android:id="@+id/setting_5"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="查看内存占用"
+            />
+
+        <SeekBar
+            android:id="@+id/seekBarBlur"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:max="100"
+            android:progress="0"/>
+        <TextView
+            android:id="@+id/seekBarBlurText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="当前模糊度：0"/>
+
+    </LinearLayout>
+
+</LinearLayout>
