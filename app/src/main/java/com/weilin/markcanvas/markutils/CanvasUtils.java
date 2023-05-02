@@ -7,8 +7,6 @@ import android.graphics.BitmapFactory;
 
 import androidx.annotation.NonNull;
 
-import org.json.JSONObject;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
